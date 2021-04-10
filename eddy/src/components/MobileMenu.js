@@ -1,28 +1,39 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import 'semantic-ui-css/semantic.min.css';
+import { Label } from 'semantic-ui-react'
 
 export default props => {
   return (
     // Pass on our props
-    <Menu {...props} right>
+    <Menu {...props} right >
       <a className="menu-item" href="/">
-        Home
+        étude en ligne
+      </a>
+      
+      <a className="menu-item" href="/">
+        guides
       </a>
 
-      <a className="menu-item" href="/burgers">
-        Burgers
+      <a className="menu-item" href="/">
+        actualités
       </a>
 
-      <a className="menu-item" href="/pizzas">
-        Pizzas
+      <a className="menu-item" href="/">
+        qui sommes-nous ?
       </a>
 
-      <a className="menu-item" href="/desserts">
-        Desserts
+      <a className="menu-item" href="/">
+        contact
       </a>
     </Menu>
   );
 };
+
+
+
+
+
 
 
 
