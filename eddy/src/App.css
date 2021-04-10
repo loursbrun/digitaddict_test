@@ -107,7 +107,8 @@ input:focus,
   color: #f07866;
 }
 .list-column {
- margin: auto;
+ margin: 0;
+ padding:0;
 }
 
 .image-menu-mobile {
@@ -116,9 +117,16 @@ input:focus,
 
 .desktop-link {
   font-weight: 900;
+  margin:0;
+  padding:0;
 }
 
 .desktop-list-link {
- 
+ margin:0;
+ padding: 0;
+}
+
+.menu-desktop {
+  border: none !important;
 }
 
