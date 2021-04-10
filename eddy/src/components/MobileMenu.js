@@ -13,7 +13,7 @@ export default props => {
       
       <a className="menu-item" href="/">
         guides
-      </a>
+      </a> 
 
       <a className="menu-item" href="/">
         actualités
