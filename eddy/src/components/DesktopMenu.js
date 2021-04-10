@@ -1,0 +1,62 @@
+import React from "react";
+import logoImage from '../img/logo.png';
+
+import 'semantic-ui-css/semantic.min.css';
+import {
+    Container,
+    Divider,
+    Dropdown,
+    Grid,
+    Header,
+    Image,
+    List,
+    Menu,
+    Segment,
+    Label
+  } from 'semantic-ui-react'
+
+export default props => {
+  return (
+    <Container textAlign='center' style={{marginTop: "1em"}}>
+            <Grid  stackable >
+              <Grid.Column width={3} >
+                <List link >
+                <Image src={ logoImage }/>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={2} >
+               
+              </Grid.Column>
+              <Grid.Column width={2} className="list-column">
+                <List link >
+                  <List.Item as='a'><p className="list-item desktop-link">étude en ligne</p></List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={2} className="list-column">
+                <List link >
+                  <List.Item as='a'><p className="list-item desktop-link">guides</p></List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={2} className="list-column" >
+                <List link >
+                  <List.Item as='a' ><p className="list-item desktop-link">actualités</p></List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={3} className="list-column"  >
+                <List link   >
+                  <List.Item as='a' ><p className="list-item desktop-link">qui sommes-nous ?</p></List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column width={2} className="list-column">
+                <List link >
+                  <List.Item as='a'><p className="list-item desktop-link">contact</p></List.Item>
+                </List>
+              </Grid.Column>
+            </Grid>
+          </Container>
+  );
+};
+
+
+
+

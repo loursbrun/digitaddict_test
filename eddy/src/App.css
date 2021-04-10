@@ -94,17 +94,31 @@ input:focus,
 }
 
 .list-item {
-  font-size: 12px;
+  font-size: 10px;
   color: #3f3f3f;
+  
 }
 .list-item {
   /* Same as before */
   transition: color 275ms ease;
 }
 .list-item:hover {
-  font-size: 12px;
+  font-size: 10px;
   color: #f07866;
 }
 .list-column {
-  margin:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
+
+.image-menu-mobile {
+  padding: 10px;
+}
+
+.desktop-link {
+  font-weight: 900;
+}
+

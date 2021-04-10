@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { createMedia } from "@artsy/fresnel";
 import MobileMenu from './components/MobileMenu';
+import DesktopMenu from './components/DesktopMenu';
 import logoImage from './img/logo.png';
 
 import {
@@ -34,12 +35,13 @@ function App() {
         {/* Header */}
           <Media at="mobile">
             <MobileMenu styles={{float:"right"}} /> 
+            <Container >
+               <Image src={ logoImage } size='small' className="image-menu-mobile" />
+            </Container>
           </Media>
-          <Media at="tablet">
-            tablet
-          </Media>
-          <Media greaterThanOrEqual="desktop">
-            desktop
+          
+          <Media greaterThanOrEqual="tablet">
+           <DesktopMenu styles={{}} /> 
           </Media>
 
            {/* Content */}
