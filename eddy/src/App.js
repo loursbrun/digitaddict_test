@@ -17,7 +17,7 @@ function App() {
 
       <MediaContextProvider>
           <Media at="mobile">
-            <MobileMenu/>
+            <MobileMenu styles={{float:"right"}} /> 
           </Media>
           <Media at="tablet">
             tablet
