@@ -93,30 +93,30 @@ const FixedMenuLayout = () => (
 
         <Segment vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
           <Container textAlign='center'>
-            <Grid divided stackable>
+            <Grid  stackable>
               <Grid.Column width={3}>
                 <List link >
-                  <List.Item as='a'>Logo</List.Item>
+                  <List.Item as='a' simple ><p className="list-item">Logo</p></List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={3}>
                 <List link >
-                  <List.Item as='a'>qui sommes-nous ?</List.Item>
+                  <List.Item as='a'><p className="list-item">qui sommes-nous ?</p></List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={3}>
                 <List link >
-                  <List.Item as='a'>Mentions légales</List.Item>
+                  <List.Item as='a'><p className="list-item">Mentions légales</p></List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={3}>
                 <List link >
-                  <List.Item as='a'>plan du site</List.Item>
+                  <List.Item as='a'><p className="list-item">plan du site</p></List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={3}>
                 <List link >
-                  <List.Item as='a'>contact</List.Item>
+                  <List.Item as='a'><p className="list-item">contact</p></List.Item>
                 </List>
               </Grid.Column>
             </Grid>

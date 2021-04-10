@@ -92,3 +92,16 @@ input:focus,
 .menu-item a {
   border-style: none;
 }
+
+.list-item {
+  font-size: 12px;
+  color: #3f3f3f;
+}
+.list-item {
+  /* Same as before */
+  transition: color 275ms ease;
+}
+.list-item:hover {
+  font-size: 12px;
+  color: #f07866;
+}
