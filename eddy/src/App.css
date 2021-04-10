@@ -128,7 +128,7 @@ input:focus,
 
 .menu-desktop {
   border: none !important;
-  box-shadow: none;
+  box-shadow: 0px;
 }
 
 .divider {
