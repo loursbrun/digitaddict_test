@@ -128,5 +128,11 @@ input:focus,
 
 .menu-desktop {
   border: none !important;
+  box-shadow: none;
+}
+
+.divider {
+  border-bottom: 0px;
+  background-color: #f07866;
 }
 

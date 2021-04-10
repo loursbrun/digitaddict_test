@@ -98,7 +98,7 @@ function App() {
 
           
           <Container textAlign='center'>
-            <Divider inverted section />
+            <Divider  section className="divider"  />
            
             <Container >
               <p style={{ fontSize: "8px" }}>
