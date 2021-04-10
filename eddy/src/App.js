@@ -59,33 +59,39 @@ function App() {
           <Media greaterThanOrEqual="tablet">
           
           <Container textAlign='center'>
-            <Grid  stackable >
-              <Grid.Column width={3} className="list-column">
-                <List link >
-                <Image src={ logoImage }/>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={3} className="list-column">
-                <List link >
-                  <List.Item as='a'><p className="list-item">qui sommes-nous ?</p></List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={3} className="list-column">
-                <List link >
-                  <List.Item as='a'><p className="list-item">Mentions légales</p></List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={3} className="list-column">
-                <List link >
-                  <List.Item as='a'><p className="list-item">plan du site</p></List.Item>
-                </List>
-              </Grid.Column>
-              <Grid.Column width={3} className="list-column">
-                <List link >
-                  <List.Item as='a'><p className="list-item">contact</p></List.Item>
-                </List>
-              </Grid.Column>
-            </Grid>
+          <Menu borderless className="menu-desktop">
+                <Menu.Item >
+                     <Image src={ logoImage } size='small'/>
+                 </Menu.Item>
+              
+                 <Menu.Menu position='right'>
+                 
+                 <Menu.Item>
+                    <List link >
+                    <List.Item as='a'><p className="list-item ">qui sommes-nous ?</p></List.Item>
+                    </List>
+                 </Menu.Item>
+                
+                 <Menu.Item>
+                    <List link >
+                    <List.Item as='a'><p className="list-item ">mentions légales</p></List.Item>
+                    </List>
+                 </Menu.Item>
+                
+                 <Menu.Item>
+                    <List link >
+                    <List.Item as='a'><p className="list-item ">plan du site</p></List.Item>
+                    </List>
+                 </Menu.Item>
+                 
+                 <Menu.Item>
+                    <List link >
+                    <List.Item as='a'><p className="list-item ">contact</p></List.Item>
+                    </List>
+                 </Menu.Item>
+                
+                </Menu.Menu>
+            </Menu>
           </Container>
         
           </Media>
