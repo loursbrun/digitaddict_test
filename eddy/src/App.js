@@ -3,6 +3,8 @@ import './App.css';
 import { createMedia } from "@artsy/fresnel";
 import MobileMenu from './components/MobileMenu';
 
+import logoImage from './img/logo.png';
+
 import {
   Container,
   Divider,
@@ -29,7 +31,7 @@ function App() {
   return (
     <div className="App">
 
-      {/* <MediaContextProvider>
+      <MediaContextProvider>
           <Media at="mobile">
             <MobileMenu styles={{float:"right"}} /> 
           </Media>
@@ -39,14 +41,14 @@ function App() {
           <Media greaterThanOrEqual="desktop">
             desktop
           </Media>
-      </MediaContextProvider> */}
+      </MediaContextProvider>
 
-const FixedMenuLayout = () => (
+
       <div>
         <Menu fixed='top' inverted>
           <Container>
             <Menu.Item as='a' header>
-              <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+              <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop:"-50px" }} />
           Project Name
         </Menu.Item>
             <Menu.Item as='a'>Home</Menu.Item>
@@ -79,42 +81,32 @@ const FixedMenuLayout = () => (
       </p>
 
 
-
-
-
-
-
-
-
-
-
-
         </Container>
 
         <Segment vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
           <Container textAlign='center'>
             <Grid  stackable>
-              <Grid.Column width={3}>
+              <Grid.Column width={3} className="list-column">
                 <List link >
-                  <List.Item as='a' simple ><p className="list-item">Logo</p></List.Item>
+                <Image src={ logoImage }/>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column width={3} className="list-column">
                 <List link >
                   <List.Item as='a'><p className="list-item">qui sommes-nous ?</p></List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column width={3} className="list-column">
                 <List link >
                   <List.Item as='a'><p className="list-item">Mentions légales</p></List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column width={3} className="list-column">
                 <List link >
                   <List.Item as='a'><p className="list-item">plan du site</p></List.Item>
                 </List>
               </Grid.Column>
-              <Grid.Column width={3}>
+              <Grid.Column width={3} className="list-column">
                 <List link >
                   <List.Item as='a'><p className="list-item">contact</p></List.Item>
                 </List>
