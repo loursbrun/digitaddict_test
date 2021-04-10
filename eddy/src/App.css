@@ -136,3 +136,16 @@ input:focus,
   background-color: #f07866;
 }
 
+.share-btn {
+  height: 30px;
+  width: 30px;
+  opacity: 0.9;
+  padding: 0 !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+.share-btn:hover {
+  opacity: 1;
+}
+
+
