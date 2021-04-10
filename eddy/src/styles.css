@@ -1,13 +1,11 @@
-html,
-body {
-  margin: 0;
-}
+
 
 #App {
   font-family: sans-serif;
 
   /* Give app full page to work with */
   height: 100vh;
+  background-color: red;
 }
 
 #page-wrap {
