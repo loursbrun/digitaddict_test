@@ -59,6 +59,17 @@ function App() {
 
 
         {/* Footer */}
+        <Media at="mobile">
+        <Container textAlign='center'>
+              <Menu.Menu position='right'>
+                <Menu.Item>
+                  <Button  className="share-btn" style={{  backgroundImage: `url(${fbImage}) ` }}/>
+                  <Button  className="share-empty" />
+                  <Button  className="share-btn" style={{  backgroundImage: `url(${twitterImage}) ` }}/>
+                </Menu.Item>
+              </Menu.Menu>
+           </Container>
+        </Media>
 
         <Media greaterThanOrEqual="tablet">
 
@@ -97,11 +108,8 @@ function App() {
               </Menu.Menu>
             </Menu>
 
-
             <Menu borderless className="menu-desktop">
-
               <Menu.Menu position='right'>
-
                 <Menu.Item>
                   <Button  className="share-btn" style={{  backgroundImage: `url(${fbImage}) ` }}/>
                 </Menu.Item>
@@ -109,7 +117,6 @@ function App() {
                 <Menu.Item>
                 <Button  className="share-btn" style={{  backgroundImage: `url(${twitterImage}) ` }}/>
                 </Menu.Item>
-
               </Menu.Menu>
             </Menu>
 

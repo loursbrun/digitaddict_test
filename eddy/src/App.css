@@ -144,6 +144,11 @@ input:focus,
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
+.share-empty {
+opacity: 0;
+pointer-events: none;
+}
+
 .share-btn:hover {
   opacity: 1;
 }
