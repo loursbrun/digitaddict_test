@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { createMedia } from "@artsy/fresnel";
 import MobileMenu from './components/MobileMenu';
-
 import logoImage from './img/logo.png';
 
 import {
@@ -32,6 +31,7 @@ function App() {
     <div className="App">
 
       <MediaContextProvider>
+        {/* Header */}
           <Media at="mobile">
             <MobileMenu styles={{float:"right"}} /> 
           </Media>
@@ -41,49 +41,21 @@ function App() {
           <Media greaterThanOrEqual="desktop">
             desktop
           </Media>
-      </MediaContextProvider>
 
-
-      <div>
-        <Menu fixed='top' inverted>
-          <Container>
-            <Menu.Item as='a' header>
-              <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em', marginTop:"-50px" }} />
-          Project Name
-        </Menu.Item>
-            <Menu.Item as='a'>Home</Menu.Item>
-
-            <Dropdown item simple text='Dropdown'>
-              <Dropdown.Menu>
-                <Dropdown.Item>List Item</Dropdown.Item>
-                <Dropdown.Item>List Item</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Header>Header Item</Dropdown.Header>
-                <Dropdown.Item>
-                  <i className='dropdown icon' />
-                  <span className='text'>Submenu</span>
-                  <Dropdown.Menu>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown.Item>
-                <Dropdown.Item>List Item</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Container>
-        </Menu>
-
-        <Container text style={{ marginTop: '7em' }}>
-          <Header as='h1'>Semantic UI React Fixed Template</Header>
-          <p>This is a basic fixed menu template using fixed size containers.</p>
+           {/* Content */}
+           
+         
           <p>
             A text container is used for the main container, which is useful for single column layouts.
-      </p>
+          </p>
 
 
-        </Container>
+        
 
-        <Segment vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
+           {/* Footer */}
+           
+          <Media greaterThanOrEqual="tablet">
+          
           <Container textAlign='center'>
             <Grid  stackable>
               <Grid.Column width={3} className="list-column">
@@ -112,7 +84,12 @@ function App() {
                 </List>
               </Grid.Column>
             </Grid>
+          </Container>
+        
+          </Media>
 
+          
+          <Container textAlign='center'>
             <Divider inverted section />
            
             <Container >
@@ -133,8 +110,12 @@ function App() {
               </p>
             </Container>
           </Container>
-        </Segment>
-      </div>
+      
+
+      </MediaContextProvider>
+
+
+      
 
     </div>
   );
