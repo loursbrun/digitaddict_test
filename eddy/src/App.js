@@ -59,7 +59,7 @@ function App() {
           <Media greaterThanOrEqual="tablet">
           
           <Container textAlign='center'>
-            <Grid  stackable>
+            <Grid  stackable >
               <Grid.Column width={3} className="list-column">
                 <List link >
                 <Image src={ logoImage }/>
