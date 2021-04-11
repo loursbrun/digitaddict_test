@@ -196,7 +196,7 @@ function App() {
 
 
           <Container textAlign='center'  >
-            <Divider section className="divider" />
+            <Divider section className="divider" className="footer-divider" />
 
             <Container >
               <p style={{ fontSize: "8px" }}>
