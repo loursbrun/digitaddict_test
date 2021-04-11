@@ -4,10 +4,13 @@ body {
 }
 
 #App {
-  font-family: sans-serif;
+  font-family: "Raleway",Sans-serif;
 
   /* Give app full page to work with */
   height: 100vh;
+}
+p {
+  font-family: "Raleway",Sans-serif;
 }
 
 #page-wrap {
@@ -92,9 +95,18 @@ input:focus,
 .menu-item a {
   border-style: none;
 }
+.menu-item {
+  font-family: "Raleway",Sans-serif;
+  font-size: 14px;
+}
+
+.bm-item .menu-item {
+  
+}
 
 .list-item {
-  font-size: 10px;
+  font-family: "Raleway",Sans-serif;
+  font-size: 14px;
   color: #3f3f3f;
   
 }
@@ -107,7 +119,11 @@ input:focus,
   transition: color 275ms ease;
 }
 .list-item:hover {
-  font-size: 10px;
+  font-family: "Raleway",Sans-serif;
+  font-size: 14px;
+  
+  margin:0;
+  padding:0;
   color: #f07866;
 }
 .list-column {
@@ -120,6 +136,8 @@ input:focus,
 }
 
 .desktop-link {
+  font-family: "Raleway",Sans-serif;
+  font-size: 14px;
   font-weight: 900;
   margin:0;
   padding:0;
@@ -197,6 +215,8 @@ pointer-events: none;
 }
 
 .header-txt {
+  font-family: "Raleway",Sans-serif;
+  font-size: 14px;
   margin-bottom: 0px;
   margin: 0 !important;
 }

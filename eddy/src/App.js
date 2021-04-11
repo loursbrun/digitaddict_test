@@ -92,14 +92,14 @@ function App() {
 
             </Form.Group>
             <Form.Field>
-              <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='nom et prénom' />
+              <input className="input-field" type="text" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='nom et prénom' />
             </Form.Field>
             <Form.Group widths='equal'>
               <Form.Field>
-                <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon adresse mail' />
+                <input className="input-field" type="text" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon adresse mail' />
               </Form.Field>
               <Form.Field>
-                <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon téléphone' />
+                <input className="input-field" type="text" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon téléphone' />
               </Form.Field>
               <Form.Field>
               </Form.Field>
