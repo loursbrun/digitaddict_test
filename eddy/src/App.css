@@ -179,6 +179,9 @@ pointer-events: none;
 .submit-btn:hover {
   opacity: 0.9;
 }
+.input-field {
+  border-radius: 0px !important;
+}
 
 .input-field::placeholder {
   color: #636363 !important;

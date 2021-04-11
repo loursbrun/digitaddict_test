@@ -102,7 +102,7 @@ function App() {
               <Form.Field>
               </Form.Field>
             </Form.Group>
-            <Form.TextArea style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} rows={5} placeholder='' />
+            <Form.TextArea style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px", borderRadius: "0px", resize: "none" }} rows={5} placeholder='' />
 
             <br />
             <Media greaterThanOrEqual="tablet">
