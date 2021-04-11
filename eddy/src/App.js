@@ -51,13 +51,13 @@ function App() {
 
         {/* Header */}
         <Media at="mobile" className="stiky-menu-mobile">
-          
+
           <MobileMenu styles={{ float: "right" }} />
           <Container >
             <Image src={logoImage} size='small' className="image-menu-mobile" />
           </Container>
           <Divider section className="divider-top" />
-         
+
         </Media>
 
         <Media greaterThanOrEqual="tablet" className="stiky-menu-mobile">
@@ -66,7 +66,7 @@ function App() {
         </Media>
 
         {/* Content */}
-       
+
 
         <Container style={{ marginTop: "100px" }}>
           <Header className="header-txt" as='h1'>contact</Header>
@@ -76,6 +76,8 @@ function App() {
             <Form.Group >
               <p style={{ fontSize: "11px", marginLeft: "8px", width: "74px" }}>Civilité</p>
               <Radio
+              size="mini"
+                className="radio"
                 value='male'
                 checked={value === 'male'}
                 onChange={handleChange}
@@ -106,17 +108,17 @@ function App() {
 
             <br />
             <Media greaterThanOrEqual="tablet">
-            <Button.Group floated="right">
-              <Button className="submit-btn" type='submit'>Envoyer</Button>
-            </Button.Group>
+              <Button.Group floated="right">
+                <Button className="submit-btn" type='submit'>Envoyer</Button>
+              </Button.Group>
             </Media>
 
             <Media at="mobile">
-            <Container textAlign='center'>
-            <Button.Group >
-              <Button className="submit-btn" type='submit'>Envoyer</Button>
-            </Button.Group>
-            </Container>
+              <Container textAlign='center'>
+                <Button.Group >
+                  <Button className="submit-btn" type='submit'>Envoyer</Button>
+                </Button.Group>
+              </Container>
             </Media>
 
             <br /><br />
@@ -127,7 +129,7 @@ function App() {
 
 
         {/* Footer */}
-        
+
 
         <Media greaterThanOrEqual="tablet">
 
@@ -172,18 +174,18 @@ function App() {
 
         <div className="footer-txt">
 
-        <Media at="mobile">
-          <Container textAlign='center'>
-            <br /><br />
-            <Menu.Menu position='right'>
-              <Menu.Item>
-                <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />
-                <Button className="share-empty" />
-                <Button className="share-btn" style={{ backgroundImage: `url(${twitterImage}) ` }} />
-              </Menu.Item>
-            </Menu.Menu>
-          </Container>
-        </Media>
+          <Media at="mobile">
+            <Container textAlign='center'>
+              <br /><br />
+              <Menu.Menu position='right'>
+                <Menu.Item>
+                  <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />
+                  <Button className="share-empty" />
+                  <Button className="share-btn" style={{ backgroundImage: `url(${twitterImage}) ` }} />
+                </Menu.Item>
+              </Menu.Menu>
+            </Container>
+          </Media>
 
           <Media greaterThanOrEqual="tablet" className="footer-sharing">
             <Menu borderless className="menu-desktop">
