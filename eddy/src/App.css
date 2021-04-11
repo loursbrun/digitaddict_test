@@ -98,6 +98,10 @@ input:focus,
   color: #3f3f3f;
   
 }
+
+.logo-menu-desktop {
+  margin-left: -35px;
+}
 .list-item {
   /* Same as before */
   transition: color 275ms ease;

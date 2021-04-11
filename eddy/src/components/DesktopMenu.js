@@ -17,7 +17,7 @@ export default props => {
 
             <Menu borderless className="menu-desktop">
                 <Menu.Item >
-                     <Image src={ logoImage } size='small'/>
+                     <Image src={ logoImage } size='small' className="logo-menu-desktop"/>
                  </Menu.Item>
               
                  <Menu.Menu position='right'>
