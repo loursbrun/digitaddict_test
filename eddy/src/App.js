@@ -37,7 +37,7 @@ const { MediaContextProvider, Media } = createMedia({
 
 function App() {
 
-  // radio button value for genre
+  // radio button value for genre Hooks 
   const [value, setValue] = useState("");
   const handleChange = (event, { value }) => setValue(value);
 
@@ -61,12 +61,10 @@ function App() {
         {/* Content */}
 
         <Container style={{ marginTop: "40px" }}>
-          <Header as='h1'>contact</Header>
-          <Header as='h6' >Une demande particulière ? Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </Header>
+          <Header className="header-txt" as='h1'>contact</Header>
+          <p className="subtitle-txt"  >Une demande particulière ? Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <Form>
-            <Form.Field>
-              Selected value: <b>{value.value}</b>
-            </Form.Field>
+           
             <Form.Group >
               <p style={{ fontSize: "11px", marginLeft: "8px", width: "74px" }}>Civilité</p>
               <Radio

@@ -172,11 +172,23 @@ pointer-events: none;
 }
 
 .input-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #636363 !important;;
+ color: #636363 !important;
 }
 
 .input-field::-ms-input-placeholder { /* Microsoft Edge */
- color: #636363 !important;;
+ color: #636363 !important;
+}
+
+.header-txt {
+  margin-bottom: 0px;
+  margin: 0 !important;
+}
+
+.subtitle-txt {
+  font-size: 12px;
+  font-weight:lighter;
+  margin-bottom: 40px;
+  
 }
 
 
