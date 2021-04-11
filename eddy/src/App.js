@@ -65,7 +65,7 @@ function App() {
           <Header className="header-txt" as='h1'>contact</Header>
           <p className="subtitle-txt"  >Une demande particulière ? Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <Form>
-           
+
             <Form.Group >
               <p style={{ fontSize: "11px", marginLeft: "8px", width: "74px" }}>Civilité</p>
               <Radio
@@ -83,102 +83,119 @@ function App() {
 
             </Form.Group>
             <Form.Field>
-              <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='nom et prénom' />
+              <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='nom et prénom' />
             </Form.Field>
             <Form.Group widths='equal'>
               <Form.Field>
-                <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='mon adresse mail' />
+                <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon adresse mail' />
               </Form.Field>
               <Form.Field>
-                <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='mon téléphone' />
+                <input className="input-field" style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} placeholder='mon téléphone' />
               </Form.Field>
               <Form.Field>
               </Form.Field>
             </Form.Group>
-            <Form.TextArea style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }}  rows={5} placeholder='' />
+            <Form.TextArea style={{ backgroundColor: "#eaeaea", border: "0px", fontSize: "11px" }} rows={5} placeholder='' />
 
-            <br/>
+            <br />
+            <Media greaterThanOrEqual="tablet">
             <Button.Group floated="right">
-               <Button className="submit-btn" type='submit'>Envoyer</Button>
-             </Button.Group>
-             <br/><br/>
+              <Button className="submit-btn" type='submit'>Envoyer</Button>
+            </Button.Group>
+            </Media>
+
+            <Media at="mobile">
+            <Container textAlign='center'>
+            <Button.Group >
+              <Button className="submit-btn" type='submit'>Envoyer</Button>
+            </Button.Group>
+            </Container>
+            </Media>
+
+            <br /><br />
           </Form>
         </Container>
 
 
 
 
-          {/* Footer */}
-          <Media at="mobile">
-            <Container textAlign='center'>
-              <br/><br/>
+        {/* Footer */}
+        
+
+        <Media greaterThanOrEqual="tablet">
+
+          <Container textAlign='center'>
+            <Menu borderless className="menu-desktop">
+              <Menu.Item >
+                <Image src={logoImage} size='small' />
+              </Menu.Item>
+
+              <Menu.Menu position='right'>
+
+                <Menu.Item>
+                  <List link >
+                    <List.Item as='a'><p className="list-item ">qui sommes-nous ?</p></List.Item>
+                  </List>
+                </Menu.Item>
+
+                <Menu.Item>
+                  <List link >
+                    <List.Item as='a'><p className="list-item ">mentions légales</p></List.Item>
+                  </List>
+                </Menu.Item>
+
+                <Menu.Item>
+                  <List link >
+                    <List.Item as='a'><p className="list-item ">plan du site</p></List.Item>
+                  </List>
+                </Menu.Item>
+
+                <Menu.Item>
+                  <List link >
+                    <List.Item as='a'><p className="list-item ">contact</p></List.Item>
+                  </List>
+                </Menu.Item>
+
+              </Menu.Menu>
+            </Menu>
+
+          </Container>
+
+        </Media>
+
+        <div className="footer-txt">
+
+        <Media at="mobile">
+          <Container textAlign='center'>
+            <br /><br />
+            <Menu.Menu position='right'>
+              <Menu.Item>
+                <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />
+                <Button className="share-empty" />
+                <Button className="share-btn" style={{ backgroundImage: `url(${twitterImage}) ` }} />
+              </Menu.Item>
+            </Menu.Menu>
+          </Container>
+        </Media>
+
+          <Media greaterThanOrEqual="tablet" className="footer-sharing">
+            <Menu borderless className="menu-desktop">
               <Menu.Menu position='right'>
                 <Menu.Item>
                   <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />
-                  <Button className="share-empty" />
+                </Menu.Item>
+
+                <Menu.Item>
                   <Button className="share-btn" style={{ backgroundImage: `url(${twitterImage}) ` }} />
                 </Menu.Item>
               </Menu.Menu>
-            </Container>
-          </Media>
-
-          <Media greaterThanOrEqual="tablet">
-
-            <Container textAlign='center'>
-              <Menu borderless className="menu-desktop">
-                <Menu.Item >
-                  <Image src={logoImage} size='small' />
-                </Menu.Item>
-
-                <Menu.Menu position='right'>
-
-                  <Menu.Item>
-                    <List link >
-                      <List.Item as='a'><p className="list-item ">qui sommes-nous ?</p></List.Item>
-                    </List>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <List link >
-                      <List.Item as='a'><p className="list-item ">mentions légales</p></List.Item>
-                    </List>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <List link >
-                      <List.Item as='a'><p className="list-item ">plan du site</p></List.Item>
-                    </List>
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <List link >
-                      <List.Item as='a'><p className="list-item ">contact</p></List.Item>
-                    </List>
-                  </Menu.Item>
-
-                </Menu.Menu>
-              </Menu>
-
-              <Menu borderless className="menu-desktop">
-                <Menu.Menu position='right'>
-                  <Menu.Item>
-                    <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />
-                  </Menu.Item>
-
-                  <Menu.Item>
-                    <Button className="share-btn" style={{ backgroundImage: `url(${twitterImage}) ` }} />
-                  </Menu.Item>
-                </Menu.Menu>
-              </Menu>
-
-
-
-            </Container>
-
+            </Menu>
           </Media>
 
 
-          <Container textAlign='center'>
+
+
+          <Container textAlign='center'  >
             <Divider section className="divider" />
 
             <Container >
@@ -197,12 +214,12 @@ function App() {
               <p style={{ fontSize: "8px" }}>
                 eddy® - Tous droits réservés - 2019
               </p>
-             <br/><br/>
+              <br /><br />
             </Container>
 
           </Container>
 
-
+        </div>
       </MediaContextProvider>
 
 
