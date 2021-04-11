@@ -22,7 +22,9 @@ import {
   Card,
   Checkbox,
   Form,
-  Radio
+  Radio,
+  Sticky,
+  Sidebar
 } from 'semantic-ui-react'
 
 
@@ -46,22 +48,27 @@ function App() {
     <div className="App">
 
       <MediaContextProvider>
+
         {/* Header */}
-        <Media at="mobile">
+        <Media at="mobile" className="stiky-menu-mobile">
+          
           <MobileMenu styles={{ float: "right" }} />
           <Container >
             <Image src={logoImage} size='small' className="image-menu-mobile" />
           </Container>
+          <Divider section className="divider-top" />
+         
         </Media>
 
-        <Media greaterThanOrEqual="tablet">
+        <Media greaterThanOrEqual="tablet" className="stiky-menu-mobile">
           <DesktopMenu styles={{}} />
+          <Divider section className="divider-top" />
         </Media>
 
         {/* Content */}
-        <Divider section className="divider-top" />
+       
 
-        <Container style={{ marginTop: "40px" }}>
+        <Container style={{ marginTop: "100px" }}>
           <Header className="header-txt" as='h1'>contact</Header>
           <p className="subtitle-txt"  >Une demande particulière ? Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <Form>

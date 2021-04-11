@@ -218,3 +218,15 @@ pointer-events: none;
   border: 0px !important;
   height: 0.5px !important;
  }
+
+ .stiky-menu-mobile {
+    position: fixed;
+    z-index: 101;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    background-color: white;
+ }
