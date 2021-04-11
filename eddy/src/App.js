@@ -84,19 +84,19 @@ function App() {
 
             </Form.Group>
             <Form.Field>
-              <input placeholder='nom et prénom' />
+              <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='nom et prénom' />
             </Form.Field>
             <Form.Group widths='equal'>
               <Form.Field>
-                <input placeholder='mon adresse mail' />
+                <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='mon adresse mail' />
               </Form.Field>
               <Form.Field>
-                <input placeholder='mon téléphone' />
+                <input className="input-field" style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }} placeholder='mon téléphone' />
               </Form.Field>
               <Form.Field>
               </Form.Field>
             </Form.Group>
-            <Form.TextArea rows={5} placeholder='Tell us more about you...' />
+            <Form.TextArea style={{ backgroundColor:"#eaeaea", border:"0px", fontSize:"11px" }}  rows={5} placeholder='' />
 
             <br/>
             <Button.Group floated="right">
@@ -112,6 +112,7 @@ function App() {
           {/* Footer */}
           <Media at="mobile">
             <Container textAlign='center'>
+              <br/><br/>
               <Menu.Menu position='right'>
                 <Menu.Item>
                   <Button className="share-btn" style={{ backgroundImage: `url(${fbImage}) ` }} />

@@ -166,4 +166,17 @@ pointer-events: none;
   opacity: 0.9;
 }
 
+.input-field::placeholder {
+  color: #636363 !important;
+  opacity: 1; /* Firefox */
+}
+
+.input-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #636363 !important;;
+}
+
+.input-field::-ms-input-placeholder { /* Microsoft Edge */
+ color: #636363 !important;;
+}
+
 
