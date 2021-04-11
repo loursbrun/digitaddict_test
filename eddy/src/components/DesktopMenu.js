@@ -4,15 +4,9 @@ import logoImage from '../img/logo.png';
 import 'semantic-ui-css/semantic.min.css';
 import {
     Container,
-    Divider,
-    Dropdown,
-    Grid,
-    Header,
     Image,
     List,
-    Menu,
-    Segment,
-    Label
+    Menu
 } from 'semantic-ui-react'
 
 export default props => {

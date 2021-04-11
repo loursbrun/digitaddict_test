@@ -136,6 +136,15 @@ input:focus,
   background-color: #f07866;
 }
 
+.divider-top {
+  margin:0 !important;;
+  padding:0 !important;;
+  border: 0px !important;
+  height: 0.5px !important;
+  background-color: #b7b7b7;
+}
+
+
 .share-btn {
   height: 30px;
   width: 30px;

@@ -59,6 +59,7 @@ function App() {
         </Media>
 
         {/* Content */}
+        <Divider section className="divider-top" />
 
         <Container style={{ marginTop: "40px" }}>
           <Header className="header-txt" as='h1'>contact</Header>
@@ -196,7 +197,9 @@ function App() {
               <p style={{ fontSize: "8px" }}>
                 eddy® - Tous droits réservés - 2019
               </p>
+             <br/><br/>
             </Container>
+
           </Container>
 
 
